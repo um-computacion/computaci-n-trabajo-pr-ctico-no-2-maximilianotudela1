@@ -11,3 +11,9 @@ class TestPalindrome(unittest.TestCase):
             self.assertTrue(is_palindrome("A man, a plan, a canal: Panama"))
             self.assertTrue(is_palindrome("No lemon, no melon"))
             self.assertFalse(is_palindrome("Esta frase no es un palíndromo"))
+
+    def test_no_palindromos(self):
+            self.assertTrue(is_palindrome(" la tina"))
+            self.assertTrue(is_palindrome("maxi"))
+            self.assertTrue(is_palindrome("melon"))
+            self.assertFalse(is_palindrome("palindromo"))
